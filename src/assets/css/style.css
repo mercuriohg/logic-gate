@@ -1,0 +1,130 @@
+@import url('./header.css');
+@import url('./footer.css'); 
+@import url('./main.css');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@font-face{
+  font-family: 'ArcadeClassic';
+  src: url('../fonts/ARCADE_I.TTF') format('truetype');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+ 
+}
+body::before {
+  content: "";
+  pointer-events: none;
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 30%, white 1px, transparent 2px),
+    radial-gradient(circle at 70% 20%, white 1px, transparent 2px),
+    radial-gradient(circle at 40% 70%, white 1px, transparent 2px),
+    radial-gradient(circle at 90% 80%, white 1px, transparent 2px),
+    radial-gradient(circle at 60% 50%, white 1px, transparent 2px),
+    radial-gradient(circle at 10% 90%, white 1px, transparent 2px),
+    radial-gradient(circle at 80% 60%, white 1px, transparent 2px);
+
+  background-size:
+    300px 300px,
+    400px 400px,
+    500px 500px,
+    600px 600px,
+    350px 350px,
+    450px 450px,
+    700px 700px;
+
+  opacity: 0.9;
+
+  z-index: 0;
+  animation: moverEstrelas 20s linear infinite, piscarEstrelas 4s ease-in-out infinite alternate;
+
+}
+@keyframes moverEstrelas {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 200px;
+  }
+}
+@keyframes piscarEstrelas {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+  
+
+label{
+  color: white;
+  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+/* Login */
+#login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(145, 12, 185);
+  border-radius: 10px;
+  width: 350px;
+  margin: 50px auto;
+  height: 500px;
+}
+#login-container h2{
+  text-align: center;
+  color: white;
+  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.input-user{
+  padding: 10px;
+  border: 2px solid rgb(145, 12, 185);
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  width: 100%;
+}
+.btn-login{
+  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  color: rgb(235, 229, 236);
+  text-decoration: none;
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid rgb(145, 12, 185);
+  border-radius: 5px;
+}
+.btn-login:hover {
+  cursor: pointer;
+  background-color: rgb(145, 12, 185);
+  color: white;
+}
+
+#user-box, #password-box{
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+label{
+  color: white;
+  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
