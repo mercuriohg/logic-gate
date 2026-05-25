@@ -1,6 +1,6 @@
-# Projeto Logic Gate
+# 🎮 Projeto Logic Gate
 
-Este repositório contém um projeto de portas lógicas. O objetivo é demonstrar o comportamento de circuitos lógicos básicos, como AND, OR, NOT, NAND, NOR e XOR.
+Este repositório contém um projeto de portas lógicas. O objetivo é demonstrar o comportamento de circuitos lógicos básicos, como AND, OR, NOT, NAND, NOR e XOR como projeto para concluir o curso de informática.
 
 ## Descrição
 
