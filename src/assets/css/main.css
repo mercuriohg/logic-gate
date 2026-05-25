@@ -2,6 +2,14 @@
     height: 100%;
     width: 100%;
 }
+#portas{
+   display: flex;
+   justify-content: center;
+}
+.logica-door{
+    margin: 20px;
+    width: 200px;
+}
 h2{color: white;font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;font-size: 24px;margin-bottom: 20px; text-align: center;}
 
 p{
@@ -11,4 +19,9 @@ p{
     font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
-
+h3{
+   font-family:  "Pixelify Sans", Arial, Helvetica, sans-serif;
+   color:  rgb(145, 12, 185);
+   font-size: 20px;
+   text-align: center;
+}
