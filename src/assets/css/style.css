@@ -1,6 +1,7 @@
 @import url('./header.css');
 @import url('./footer.css'); 
 @import url('./main.css');
+@import url('./card.css');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @font-face{
   font-family: 'ArcadeClassic';
@@ -64,67 +65,4 @@ body::before {
   50% {
     opacity: 1;
   }
-}
-  
-
-label{
-  color: white;
-  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-}
-/* Login */
-#login-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(145, 12, 185);
-  border-radius: 10px;
-  width: 350px;
-  margin: 50px auto;
-  height: 500px;
-}
-#login-container h2{
-  text-align: center;
-  color: white;
-  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.input-user{
-  padding: 10px;
-  border: 2px solid rgb(145, 12, 185);
-  border-radius: 5px;
-  background-color: transparent;
-  color: white;
-  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-  width: 100%;
-}
-.btn-login{
-  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-  color: rgb(235, 229, 236);
-  text-decoration: none;
-  width: 100%;
-  font-size: 18px;
-  background-color: transparent;
-  padding: 10px 20px;
-  border: 2px solid rgb(145, 12, 185);
-  border-radius: 5px;
-}
-.btn-login:hover {
-  cursor: pointer;
-  background-color: rgb(145, 12, 185);
-  color: white;
-}
-
-#user-box, #password-box{
-  margin-bottom: 15px;
-  gap: 5px;
-}
-
-label{
-  color: white;
-  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
-  font-size: 12px;
 }

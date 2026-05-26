@@ -1,0 +1,73 @@
+/* Login */
+#login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(145, 12, 185);
+  border-radius: 10px;
+  width: 450px;
+  margin: 50px auto;
+  height: 600px;
+}
+#login-container h2{
+  text-align: center;
+  color: white;
+  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.input-user{
+  padding: 10px;
+  border: 2px solid rgb(145, 12, 185);
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+  margin: 10px 20px;
+  width: 90%;
+}
+.btn-login{
+  font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  color: rgb(235, 229, 236);
+  text-decoration: none;
+  width:50%;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid rgb(145, 12, 185);
+  border-radius: 5px;
+}
+.btn-login:hover {
+  cursor: pointer;
+  background-color: rgb(145, 12, 185);
+  color: white;
+}
+#login-form{width: 90%}
+#button-box{
+  display: flex;
+  justify-content: center;
+}
+#user-box,#email-box, #password-box{
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.labels{
+  display: flex;
+  flex-direction: column;
+}
+.labels span{
+    margin-top: 20px;
+    color: red;
+    font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.style-label{color:rgb(145, 12, 185);margin: 10px;font-family: "Pixelify Sans", Arial, Helvetica, sans-serif;font-size: 15px;}
+.style-label a{color:white;text-decoration: none;}
+.style-label a:hover{color:rgb(152, 93, 170);text-decoration: underline;}
+label{
+    margin-left: 20px;
+  color: white;
+  font-family: "ArcadeClassic", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
