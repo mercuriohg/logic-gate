@@ -10,7 +10,7 @@
 
 <body>
   <header id="container-header">
-    <h1>Logic Gate</h1>
+      <img src="../img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
     <ul id="list-ul">
       <li><a href="#" class="btn">Ranking</a></li>
@@ -64,13 +64,13 @@
 
       </div>
       <div class="logica-door">
-        <h3>Porta AND</h3>
-        <img src="../img/or.png" alt="Porta lógica not" height="100em">
+        <h3>Porta NOR</h3>
+        <img src="../img/nor.png" alt="Porta lógica nor" height="100em">
 
       </div>
       <div class="logica-door">
         <h3>Porta AND</h3>
-        <img src="../img/or.png" alt="Porta lógica not" height="100em">
+        <img src="../img/and.png" alt="Porta lógica and" height="100em">
 
       </div>
     </div>

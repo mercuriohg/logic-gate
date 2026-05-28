@@ -9,7 +9,7 @@
 </head>
 <body>
         <header id="container-header">
-        <h1>Logic Gate</h1>
+      <img src="../img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
         <ul id="list-ul">
             <li><a href="#" class="btn">Ranking</a></li>

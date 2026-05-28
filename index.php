@@ -9,8 +9,7 @@
   </head>
   <body>
     <header id="container-header">
-        <h1>Logic Gate</h1>
-
+      <img src="src/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
         <ul id="list-ul">
             <li><a href="#" class="btn">Ranking</a></li>
             <li><a href="src/assets/pages/projeto.php" class="btn">Projeto</a></li>
