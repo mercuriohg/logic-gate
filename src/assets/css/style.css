@@ -15,14 +15,13 @@
 body {
   background-color: black;
   margin: 0;
-  overflow: hidden;
  
 }
 body::before {
   content: "";
   pointer-events: none;
 
-  position: absolute;
+  position: fixed;
 
   inset: 0;
 
