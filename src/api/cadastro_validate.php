@@ -23,6 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Exemplo de resposta de sucesso
     echo json_encode(['success' => true, 'message' => 'Cadastro realizado com sucesso!']);
+    // Redirecionar para a página de login ou outra página após o cadastro
+    header("Location: /index.php");
 } else {
     echo json_encode(['success' => false, 'message' => 'Método de requisição inválido.']);
 }
