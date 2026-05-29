@@ -22,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Por exemplo, usando PDO para inserir os dados em uma tabela de usuários
 
     // Exemplo de resposta de sucesso
+    header("Location: /index.html");
+
     echo json_encode(['success' => true, 'message' => 'Cadastro realizado com sucesso!']);
 } else {
     echo json_encode(['success' => false, 'message' => 'Método de requisição inválido.']);
