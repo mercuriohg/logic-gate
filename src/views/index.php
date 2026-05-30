@@ -13,7 +13,7 @@
         <ul id="list-ul">
             <li><a href="#" class="btn">Ranking</a></li>
             <li><a href="/projeto" class="btn">Projeto</a></li>
-            <li><a href="/assets/pages/login.html" class="btn">Entrar</a></li>
+            <li><a href="/login" class="btn">Entrar</a></li>
         </ul>
     </header>
 

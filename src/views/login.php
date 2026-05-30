@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Logic Gate</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
         <header id="container-header">
-      <img src="../img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
+      <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
         <ul id="list-ul">
             <li><a href="#" class="btn">Ranking</a></li>
-            <li><a href="/index.html" class="btn">Inicio</a></li>
-            <li><a href="../pages/projeto.html" class="btn">Projeto</a></li>
+            <li><a href="/" class="btn">Inicio</a></li>
+            <li><a href="/projeto" class="btn">Projeto</a></li>
         </ul>
     </header>
         <main id="container-main">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="labels">
                     <span id="error-message"></span>
-                    <label class="style-label">Não tem uma conta? <a href="../pages/cadastro.html">Cadastre-se</a></label>
+                    <label class="style-label">Não tem uma conta? <a href="/cadastro">Cadastre-se</a></label>
                    <label  class="style-label"><a href="#">Esqueci minha senha</a></label> 
                 </div>
                 </form>

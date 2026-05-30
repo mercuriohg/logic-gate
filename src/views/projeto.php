@@ -10,12 +10,12 @@
 
 <body>
   <header id="container-header">
-      <img src="../img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
+      <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
     <ul id="list-ul">
       <li><a href="#" class="btn">Ranking</a></li>
       <li><a href="/" class="btn">Inicio</a></li>
-      <li><a href="../pages/login.html" class="btn">Entrar</a></li>
+      <li><a href="/login" class="btn">Entrar</a></li>
     </ul>
   </header>
   <main id="container-main">
@@ -43,34 +43,34 @@
     <div id="portas">
       <div class="logica-door">
         <h3>Porta AND</h3>
-        <img src="../img/and.png" alt="Porta lógica and" height="100em">
+        <img src="/assets/img/and.png" alt="Porta lógica and" height="100em">
       </div>
       <div class="logica-door">
         <h3>Porta NOT</h3>
-        <img src="../img/not.png" alt="Porta lógica not" height="100em">
+        <img src="/assets/img/not.png" alt="Porta lógica not" height="100em">
 
       </div>
       <div class="logica-door">
         <h3>Porta OR</h3>
-        <img src="../img/or.png" alt="Porta lógica or" height="100em">
+        <img src="/assets/img/or.png" alt="Porta lógica or" height="100em">
       </div>
       <div class="logica-door">
         <h3>Porta XOR</h3>
-        <img src="../img/xor.png" alt="Porta lógica xor" height="100em">
+        <img src="/assets/img/xor.png" alt="Porta lógica xor" height="100em">
       </div>
       <div class="logica-door">
         <h3>Porta NAND</h3>
-        <img src="../img/nand.png" alt="Porta lógica nand" height="100em">
+        <img src="/assets/img/nand.png" alt="Porta lógica nand" height="100em">
 
       </div>
       <div class="logica-door">
         <h3>Porta NOR</h3>
-        <img src="../img/nor.png" alt="Porta lógica nor" height="100em">
+        <img src="/assets/img/nor.png" alt="Porta lógica nor" height="100em">
 
       </div>
       <div class="logica-door">
         <h3>Porta AND</h3>
-        <img src="../img/and.png" alt="Porta lógica and" height="100em">
+        <img src="/assets/img/and.png" alt="Porta lógica and" height="100em">
 
       </div>
     </div>
