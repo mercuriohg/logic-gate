@@ -2,6 +2,7 @@
 @import url('./footer.css'); 
 @import url('./main.css');
 @import url('./card.css');
+@import url('./responsive.css');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @font-face{
   font-family: 'ArcadeClassic';

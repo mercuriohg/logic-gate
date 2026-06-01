@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Logic Gate</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Cadastro - Logic Gate</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
   <header id="container-header">
-    <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
+    <img src="../assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
     <ul id="list-ul">
-      <li><a href="#" class="btn">Ranking</a></li>
-      <li><a href="/index.html" class="btn">Inicio</a></li>
+      <li><a href="/ranking" class="btn">Ranking</a></li>
+      <li><a href="/" class="btn">Inicio</a></li>
       <li><a href="/projeto" class="btn">Projeto</a></li>
     </ul>
   </header>
   <main id="container-main">
     <div id="login-container">
-      <form action="/api/cadastro_validate.php" method="post" id="login-form">
+      <form action="../api/cadastro_validate.php" method="post" id="login-form">
         <h2>Cadastro</h2>
         <div id="user-box">
           <label>Usuário:</label>
