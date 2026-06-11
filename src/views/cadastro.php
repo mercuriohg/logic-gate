@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Logic Gate</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Cadastro - Logic Gate</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
   <header id="container-header">
-    <img src="../img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
+    <img src="../assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
     <ul id="list-ul">
-      <li><a href="#" class="btn">Ranking</a></li>
-      <li><a href="/index.html" class="btn">Inicio</a></li>
-      <li><a href="../pages/projeto.html" class="btn">Projeto</a></li>
+      <li><a href="/ranking" class="btn">Ranking</a></li>
+      <li><a href="/" class="btn">Inicio</a></li>
+      <li><a href="/projeto" class="btn">Projeto</a></li>
     </ul>
   </header>
   <main id="container-main">
     <div id="login-container">
-      <form action="../../api/cadastro_validate.php" method="post" id="login-form">
+      <form action="/cadastro_validate" method="post" id="login-form">
         <h2>Cadastro</h2>
         <div id="user-box">
           <label>Usuário:</label>
@@ -42,7 +42,7 @@
         </div>
         <div class="labels">
           <span id="error-message"></span>
-          <label class="style-label">Já tem uma conta? <a href="../pages/login.php">Login</a></label>
+          <label class="style-label">Já tem uma conta? <a href="/login">Login</a></label>
           <!--<label name="forgot-password-link" class="style-label"><a href="#">Esqueci minha senha</a></label> -->
         </div>
       </form>

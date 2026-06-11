@@ -9,22 +9,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validação básica
     if (empty($username) || empty($email) || empty($password) || empty($confirmPassword)) {
-        echo json_encode(['success' => false, 'message' => 'Todos os campos são obrigatórios.']);
+        echo "<script>alert('Por favor, preencha todos os campos.'); window.location.href = '/cadastro';</script>";
         exit;
     }
 
     if ($password !== $confirmPassword) {
-        echo json_encode(['success' => false, 'message' => 'As senhas não coincidem.']);
+        echo "<script>alert('As senhas não coincidem.'); window.location.href = '/cadastro';</script>";
         exit;
     }
 
     // Aqui você pode adicionar a lógica para salvar o usuário no banco de dados
     // Por exemplo, usando PDO para inserir os dados em uma tabela de usuários
-
-    // Exemplo de resposta de sucesso
-    header("Location: /index.html");
-
-    echo json_encode(['success' => true, 'message' => 'Cadastro realizado com sucesso!']);
+    $_SESSION['username'] = $username;
+    // Redirecionar para a página de login ou outra página após o cadastro
+    header("Location: /");
 } else {
     echo json_encode(['success' => false, 'message' => 'Método de requisição inválido.']);
 }
