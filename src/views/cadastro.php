@@ -20,7 +20,7 @@
   </header>
   <main id="container-main">
     <div id="login-container">
-      <form action="../api/cadastro_validate.php" method="post" id="login-form">
+      <form action="/cadastro_validate" method="post" id="login-form">
         <h2>Cadastro</h2>
         <div id="user-box">
           <label>Usuário:</label>

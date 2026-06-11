@@ -12,14 +12,14 @@
       <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
 
         <ul id="list-ul">
-            <li><a href="#" class="btn">Ranking</a></li>
+            <li><a href="/ranking" class="btn">Ranking</a></li>
             <li><a href="/" class="btn">Inicio</a></li>
             <li><a href="/projeto" class="btn">Projeto</a></li>
         </ul>
     </header>
         <main id="container-main">
             <div id="login-container">
-            <form action="../api/login.php" method="post" id="login-form">
+            <form action="/login_validate" method="post" id="login-form">
             <h2>Login</h2>
             <div id="user-box">
               <label>Usuário:</label>

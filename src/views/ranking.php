@@ -15,5 +15,19 @@
             <li><a href="/login" class="btn">Entrar</a></li>
         </ul>
     </header>
+    <main id="container-main">
+        <h1>Ranking dos Usuários</h1>
+        <table id="ranking-table">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Usuário</th>
+                    <th>Pontuação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão inseridos os dados do ranking -->
+            </tbody>
+        </table>
 </body>
 </html>

@@ -21,6 +21,7 @@
   
     <footer id="container-footer"></footer>
 
-    <? include __DIR__ . '/components/footer.php' ?>
+    <!-- <? include __DIR__ . '/components/footer.php' ?> -->
+     <script src="../controllers/Controller.js"></script>
   </body>
 </html>
