@@ -18,11 +18,18 @@ $_SESSION['username'] = $_SESSION['username'] ?? 'Adm';
             <li><a href="/ranking" class="btn">Ranking</a></li>
             <li><a href="/projeto" class="btn">Projeto</a></li>
             <li><a href="/login" class="btn">Entrar</a></li>
+            <li><a href="/" class="btn">Inicio</a></li>
+
         </ul>
     </header>
     <main class="adm">
         <h2>Bem-vindo, <?php echo $_SESSION['username']; ?>!</h2>
         <p>Aqui você pode gerenciar o conteúdo do site.</p>
+        <div id="admin-options">
+            <a href="/admin/users" class="btn">Gerenciar Usuários</a>
+            <a href="/admin/content" class="btn">Gerenciar Conteúdo</a>
+            <a href="/admin/settings" class="btn">Configurações</a>
+        </div>
     </main>
 </body>
 </html>

@@ -17,7 +17,28 @@
         </ul>
     </header>
 
-    <main id="container-main"></main>
+    <main id="container-main">
+      <div class="mapa-fases">
+
+    <div class="linha l1"></div>
+    <div class="linha l2"></div>
+    <div class="linha l3"></div>
+    <div class="linha l4"></div>
+    <div class="linha l5"></div>
+    <div class="linha l6"></div>
+    <div class="linha l7"></div>
+
+    <div class="fase ativa">1</div>
+    <div class="fase">2</div>
+    <div class="fase">3</div>
+    <div class="fase">4</div>
+    <div class="fase">5</div>
+    <div class="fase">6</div>
+    <div class="fase">7</div>
+    <div class="fase">8</div>
+
+</div>
+    </main>
   
     <footer id="container-footer"></footer>
 
