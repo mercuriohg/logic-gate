@@ -25,3 +25,15 @@ h3{
    font-size: 20px;
    text-align: center;
 }
+#list-ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Esconde o botão no desktop */
+#toogle-div {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}

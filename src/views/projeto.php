@@ -24,6 +24,8 @@
         <li><a href="/" class="btn">Inicio</a></li>
         <li><a href="/login" class="btn">Entrar</a></li>
       </ul>
+      <div id="toogle-div"><i class="fas fa-bars" id="menu-toogle"></i></div>
+
     </header>
     <main id="container-main">
       <h2>Sobre o Projeto</h2>

@@ -14,8 +14,8 @@ class RouterController
             'ranking' => __DIR__ . '/../views/ranking.php',
 
             //APIS
-            'login_validate' => __DIR__ . '/../api/login_validate.php',
-            'cadastro_validate' => __DIR__ . '/../api/cadastro_validate.php',
+            'login_validate' => __DIR__ . '/../api/Login_Validate.php',
+            'cadastro_validate' => __DIR__ . '/../api/Cadastro_Validate.php',
             
         ];
 

@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    #list-ul, #x-mark {
+        display: none;
+    }
+
+    #toogle-div {
+        display: flex;
+        align-items: center;
+    }
+    p{
+      margin: 30px 20px;
+}
+    
+}   
+
+@media (min-width: 769px) and (max-width: 1179px) {
+    #toogle-div {
+        display: none;
+    }
+      p{
+      margin: 30px 230px;
+}
+    
+}
+
+@media (min-width: 1180px) {
+    #toogle-div {
+        display: none;
+    }
+}
