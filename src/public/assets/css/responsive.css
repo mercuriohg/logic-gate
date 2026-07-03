@@ -10,7 +10,9 @@
     p{
       margin: 30px 20px;
 }
-    
+    .card-text{
+        width: 100%;
+    }
 }   
 
 @media (min-width: 769px) and (max-width: 1179px) {
