@@ -15,13 +15,11 @@
   
   </head>
   <body>
-    <?= require __DIR__ . '/components/header.php'?>
+    
     <main id="container-main">
      
     </main>
   
-    <footer id="container-footer"></footer>
-
      <script src="/assets/js/Toogle.js"></script>
   </body>
 </html>

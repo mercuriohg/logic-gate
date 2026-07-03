@@ -5,6 +5,4 @@
             <li><a href="/projeto" class="btn">Projeto</a></li>
             <li><a href="/login" class="btn">Entrar</a></li>
         </ul>
-       <div id="toogle-div"><i class="fas fa-bars" id="menu-toogle"></i></div>
-       <div id="toogle-x"><i class="fas fa-xmark" id="x-mark"></i></div>
 </header>
