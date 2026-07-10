@@ -6,7 +6,8 @@
     <title>Perfil</title>
 </head>
 <body>
-   <?= require __DIR__ . '/components/header.php'?>
+    <?php include __DIR__ . '/components/header.php'; ?>    
+     
    
 </body>
 </html>

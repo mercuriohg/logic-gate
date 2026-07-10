@@ -8,15 +8,8 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-        <header id="container-header">
-      <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
+          <?php include __DIR__ . '/components/header.php'; ?>    
 
-        <ul id="list-ul">
-            <li><a href="/ranking" class="btn">Ranking</a></li>
-            <li><a href="/" class="btn">Inicio</a></li>
-            <li><a href="/projeto" class="btn">Projeto</a></li>
-        </ul>
-    </header>
         <main id="container-main">
             <div id="login-container">
             <form action="/login_validate" method="post" id="login-form">

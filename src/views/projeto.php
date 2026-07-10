@@ -16,17 +16,8 @@
   </head>
 
   <body>
-    <header id="container-header">
-        <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
+    <?php include __DIR__ . '/components/header.php'; ?>    
 
-      <ul id="list-ul">
-        <li><a href="/ranking" class="btn">Ranking</a></li>
-        <li><a href="/" class="btn">Inicio</a></li>
-        <li><a href="/login" class="btn">Entrar</a></li>
-      </ul>
-      <div id="toogle-div"><i class="fas fa-bars" id="menu-toogle"></i></div>
-
-    </header>
     <main id="container-main">
       <h2>Sobre o Projeto</h2>
       <p>

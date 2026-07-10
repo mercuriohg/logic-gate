@@ -7,14 +7,8 @@
     <link rel="stylesheet" href="/assets/css/style.css"> 
 </head>
 <body>
-    <header id="container-header">
-      <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
-        <ul id="list-ul">
-            <li><a href="/projeto" class="btn">Projeto</a></li>
-            <li><a href="/" class="btn">Inicio</a></li>
-            <li><a href="/login" class="btn">Entrar</a></li>
-        </ul>
-    </header>
+    <?php include __DIR__ . '/components/header.php'; ?>    
+
     <main id="container-main">
         <h1>Ranking dos Usuários</h1>
         <table id="ranking-table">
