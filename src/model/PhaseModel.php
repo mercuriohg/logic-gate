@@ -1,6 +1,6 @@
 <?php 
 
-class Phase
+class PhaseModel
 {
     public int $xp;
     public int $level;

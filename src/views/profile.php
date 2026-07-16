@@ -8,6 +8,10 @@
 <body>
     <?php include __DIR__ . '/components/header.php'; ?>    
      
-   
+
+    <?php
+    
+    ?>
+    
 </body>
 </html>
