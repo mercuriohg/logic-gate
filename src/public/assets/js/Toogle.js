@@ -1,17 +1,18 @@
-const bars = document.getElementById("menu-toogle");
-const divToogle = document.getElementById("toogle-div");
-const ulToogle = document.getElementById("list-ul");
-const xis = document.getElementById("x-mark");
+const menuButton = document.getElementById("menu-toogle");
+const closeButton = document.getElementById("x-mark");
+const navList = document.getElementById("list-ul");
 
-bars.addEventListener("click", function () {
-    ulToogle.style.display = "block";
-    xis.style.display = "block";
-    divToogle.style.display = "none";
-})
+if (menuButton && closeButton && navList) {
+  const toggleMenu = (open) => {
+    navList.classList.toggle("active", open);
+    menuButton.style.display = open ? "none" : "flex";
+    closeButton.style.display = open ? "flex" : "none";
+  };
 
-xis.addEventListener("click", function () {
-    ulToogle.style.display = "none";
-    divToogle.style.display = "block";
-    xis.style.display = "none";
+  menuButton.addEventListener("click", () => toggleMenu(true));
+  closeButton.addEventListener("click", () => toggleMenu(false));
 
-})
+  navList.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => toggleMenu(false));
+  });
+}

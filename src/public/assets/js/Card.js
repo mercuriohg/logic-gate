@@ -1,15 +1,15 @@
-const infoPorta = document.getElementById('info-porta');
+const infoPorta = document.getElementById("info-porta");
 
-const cardAnd = document.getElementById('and');
-const cardOr = document.getElementById('or');
-const cardXor = document.getElementById('xor');
-const cardNand = document.getElementById('nand');
-const cardNor = document.getElementById('nor');
-const cardXnor = document.getElementById('xnor');
-const cardNot = document.getElementById('not');
+const cardAnd = document.getElementById("and");
+const cardOr = document.getElementById("or");
+const cardXor = document.getElementById("xor");
+const cardNand = document.getElementById("nand");
+const cardNor = document.getElementById("nor");
+const cardXnor = document.getElementById("xnor");
+const cardNot = document.getElementById("not");
 
 function mostrarPorta(porta, imagem) {
-    infoPorta.innerHTML = `
+  infoPorta.innerHTML = `
         <div class="card-text">
             <header class="mark">
                 <i class="fa-solid fa-xmark"></i>
@@ -20,52 +20,62 @@ function mostrarPorta(porta, imagem) {
             <p>${texto(porta)}</p>
         </div>
     `;
+  infoPorta.classList.add("active");
 
-    const xMark = document.querySelector('.fa-solid.fa-xmark');
-
-    xMark.addEventListener('click', () => {
-        infoPorta.innerHTML = '';
+  const xMark = infoPorta.querySelector(".fa-solid.fa-xmark");
+  if (xMark) {
+    xMark.addEventListener("click", () => {
+      infoPorta.classList.remove("active");
+      infoPorta.innerHTML = "";
     });
+  }
 }
 
-cardAnd.addEventListener('click', () => {
-    mostrarPorta('and', '/assets/img/and.png');
+infoPorta.addEventListener("click", (event) => {
+  if (event.target === infoPorta) {
+    infoPorta.classList.remove("active");
+    infoPorta.innerHTML = "";
+  }
 });
 
-cardOr.addEventListener('click', () => {
-    mostrarPorta('or', '/assets/img/or.png');
+cardAnd.addEventListener("click", () => {
+  mostrarPorta("and", "/assets/img/and.png");
 });
 
-cardXor.addEventListener('click', () => {
-    mostrarPorta('xor', '/assets/img/xor2.png');
+cardOr.addEventListener("click", () => {
+  mostrarPorta("or", "/assets/img/or.png");
 });
 
-cardNand.addEventListener('click', () => {
-    mostrarPorta('nand', '/assets/img/nand.png');
+cardXor.addEventListener("click", () => {
+  mostrarPorta("xor", "/assets/img/xor2.png");
 });
 
-cardNor.addEventListener('click', () => {
-    mostrarPorta('nor', '/assets/img/nor.png');
+cardNand.addEventListener("click", () => {
+  mostrarPorta("nand", "/assets/img/nand.png");
 });
 
-cardXnor.addEventListener('click', () => {
-    mostrarPorta('xnor', '/assets/img/xnor.png');
+cardNor.addEventListener("click", () => {
+  mostrarPorta("nor", "/assets/img/nor.png");
 });
 
-cardNot.addEventListener('click', () => {
-    mostrarPorta('not', '/assets/img/not.png');
+cardXnor.addEventListener("click", () => {
+  mostrarPorta("xnor", "/assets/img/xnor.png");
+});
+
+cardNot.addEventListener("click", () => {
+  mostrarPorta("not", "/assets/img/not.png");
 });
 
 function texto(porta) {
-    const textos = {
-        and: "Porta AND: A saída é verdadeira (1) somente se ambas as entradas forem verdadeiras (1).",
-        or: "Porta OR: A saída é verdadeira (1) se pelo menos uma das entradas for verdadeira (1).",
-        xor: "Porta XOR: A saída é verdadeira (1) se exatamente uma das entradas for verdadeira (1).",
-        nand: "Porta NAND: A saída é falsa (0) somente se ambas as entradas forem verdadeiras (1).",
-        nor: "Porta NOR: A saída é verdadeira (1) somente se ambas as entradas forem falsas (0).",
-        xnor: "Porta XNOR: A saída é verdadeira (1) se ambas as entradas forem iguais.",
-        not: "Porta NOT: A saída é o inverso da entrada."
-    };
+  const textos = {
+    and: "Porta AND: A saída é verdadeira (1) somente se ambas as entradas forem verdadeiras (1).",
+    or: "Porta OR: A saída é verdadeira (1) se pelo menos uma das entradas for verdadeira (1).",
+    xor: "Porta XOR: A saída é verdadeira (1) se exatamente uma das entradas for verdadeira (1).",
+    nand: "Porta NAND: A saída é falsa (0) somente se ambas as entradas forem verdadeiras (1).",
+    nor: "Porta NOR: A saída é verdadeira (1) somente se ambas as entradas forem falsas (0).",
+    xnor: "Porta XNOR: A saída é verdadeira (1) se ambas as entradas forem iguais.",
+    not: "Porta NOT: A saída é o inverso da entrada.",
+  };
 
-    return textos[porta];
+  return textos[porta];
 }
