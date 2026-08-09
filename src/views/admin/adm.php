@@ -12,16 +12,7 @@ $_SESSION['username'] = $_SESSION['username'] ?? 'Adm';
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-        <header id="container-header">
-      <img src="/assets/img/logic-gate.png" alt="Logo do Logic Gate" id="logo" height="100em">
-        <ul id="list-ul">
-            <li><a href="/ranking" class="btn">Ranking</a></li>
-            <li><a href="/projeto" class="btn">Projeto</a></li>
-            <li><a href="/login" class="btn">Entrar</a></li>
-            <li><a href="/" class="btn">Inicio</a></li>
-
-        </ul>
-    </header>
+    <?php include __DIR__ . '/../components/header.php'; ?>
     <main class="adm">
         <h2>Bem-vindo, <?php echo $_SESSION['username']; ?>!</h2>
         <p>Aqui você pode gerenciar o conteúdo do site.</p>

@@ -16,9 +16,5 @@
   </head>
   <body>
    <?php include __DIR__ . '/components/header.php'; ?>    
-     
-    </main>
-  
-     <script src="/assets/js/Toogle.js"></script>
   </body>
 </html>

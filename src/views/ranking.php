@@ -21,9 +21,8 @@
             </thead>
             <tbody>
                 <!-- Aqui serão inseridos os dados do ranking -->
-
-        
             </tbody>
         </table>
+    </main>
 </body>
 </html>
