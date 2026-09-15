@@ -13,7 +13,7 @@
 
   <main id="container-main">
     <div id="login-container">
-      <form action="/cadastro_validate" method="post" id="login-form">
+      <form action="/cadastro" method="post" id="login-form">
         <h2>Cadastro</h2>
         <div id="user-box">
           <label>Usuário:</label>

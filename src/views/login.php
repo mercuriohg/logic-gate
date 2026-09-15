@@ -12,7 +12,7 @@
 
         <main id="container-main">
             <div id="login-container">
-            <form action="/login_validate" method="post" id="login-form">
+            <form action="/login" method="post" id="login-form">
             <h2>Login</h2>
             <div id="user-box">
               <label>Usuário:</label>
