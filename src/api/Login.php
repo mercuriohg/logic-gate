@@ -7,12 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Aqui você pode adicionar a lógica para validar o login do usuário
     // Por exemplo, usando PDO para verificar as credenciais no banco de dados
     if ($username === 'mercuriohg' && $password === 'admin') {
-        $_SESSION['user'] = $username; // Armazena o nome do usuário na sessão
+        $_SESSION['user'] = $username;
+        $_SESSION['username'] = $username;
+        $_SESSION['is_admin'] = true;
         header("Location: /admin"); // Redireciona para a página de administrador
         exit;
     } else {
         echo json_encode(['success' => false, 'message' => 'Credenciais inválidas.']);
     }
+    $_SESSION['is_admin'] = false;
     $_SESSION['username'] = $username;
     // Redirecionar para a página principal ou outra página após o login
     header("Location: /");
