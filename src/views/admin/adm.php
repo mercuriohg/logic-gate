@@ -1,6 +1,10 @@
 <?php
 session_start();
-$_SESSION['username'] = $_SESSION['username'] ?? 'Adm';
+
+if (empty($_SESSION['is_admin'])) {
+    header('Location: /login');
+    exit;
+}
 
 ?>
 <!DOCTYPE html>
@@ -16,10 +20,11 @@ $_SESSION['username'] = $_SESSION['username'] ?? 'Adm';
     <main class="adm">
         <h2>Bem-vindo, <?php echo $_SESSION['username']; ?>!</h2>
         <p>Aqui você pode gerenciar o conteúdo do site.</p>
-        <div id="admin-options">
-            <a href="/admin/users" class="btn">Gerenciar Usuários</a>
-            <a href="/admin/content" class="btn">Gerenciar Conteúdo</a>
-            <a href="/admin/settings" class="btn">Configurações</a>
+        <div class="admin-options">
+            <div class="box-admin"><a href="/admin/users" class="btn-admin">Gerenciar Usuários</a></div>
+            <div class="box-admin"><a href="/admin/content" class="btn-admin">Gerenciar Ranking</a></div>
+            <div class="box-admin"><a href="/admin/phases" class="btn-admin">Fases</a></div>
+            <div class="box-admin"><a href="/admin/settings" class="btn-admin">Estatísticas</a></div>
         </div>
     </main>
 </body>
