@@ -1,5 +1,13 @@
 
 <!DOCTYPE html>
+<?php
+if (session_status() !== PHP_SESSION_ACTIVE) {
+  session_start();
+}
+
+$loginError = $_SESSION['login_error'] ?? '';
+unset($_SESSION['login_error']);
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +35,7 @@
             <input type="submit" value="Login" class="btn-login">
                 </div>
                 <div class="labels">
-                    <span id="error-message"></span>
+                  <span id="error-message"><?= htmlspecialchars($loginError, ENT_QUOTES, 'UTF-8') ?></span>
                     <label class="style-label">Não tem uma conta? <a href="/cadastro">Cadastre-se</a></label>
                    <label  class="style-label"><a href="#">Esqueci minha senha</a></label> 
                 </div>
