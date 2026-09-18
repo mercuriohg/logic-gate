@@ -15,7 +15,7 @@ $_SESSION['username'] = $_SESSION['username'] ?? 'Adm';
     <?php include __DIR__ . '/../components/header.php'; ?>
     <main class="adm">
         <h2>Bem-vindo, <?php echo $_SESSION['username']; ?>!</h2>
-        <p>Aqui você pode gerenciar as fases do site.</p>
+        <p>Aqui você pode gerenciar os usuários do site.</p>
         <div id="admin-new-phase">
             
         </div>
