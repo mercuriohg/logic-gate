@@ -13,12 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: /admin"); // Redireciona para a página de administrador
         exit;
     } else {
-        echo json_encode(['success' => false, 'message' => 'Credenciais inválidas.']);
+        $_SESSION['login_error'] = 'Credenciais inválidas.';
+        header("Location: /login");
+        exit;
     }
-    $_SESSION['is_admin'] = false;
-    $_SESSION['username'] = $username;
-    // Redirecionar para a página principal ou outra página após o login
-    header("Location: /");
 } else {
     echo json_encode(['success' => false, 'message' => 'Método de requisição inválido.']);
 }
